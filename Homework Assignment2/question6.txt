@@ -1,0 +1,5 @@
+Why is O(n^2) faster than O(nlogn) sometimes?
+
+Usually, we say that the program with runtime of O(nlogn) is faster than that with runtime of O(n^2) is because that the growth rate of nlogn function is greater than n^2 function when n>n0 where n0 may be a very great number. But this does not necessarily hold when n is a small number. 
+
+Also, because we don't inspect the coefficients and other items in the polynomials when inspecting the time complexity but they do matter when doing actual comparison of runtime, especially when n is not a big number. Hence, it's possible to have O(n^2) faster than O(nlogn) when n is small.
